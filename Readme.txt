@@ -1,5 +1,8 @@
 Periodic Table of Elements.ed
-Version 1 (Greek Edition)
+Version 2 (Greek Edition)
+
+Wrong use of an if prevents the work of "buttons" in a system with one monitor;
+
 
 Using the Application:
 1. Click on an Element to see more information

@@ -1,4 +1,4 @@
-﻿MODULE GLOBAL A {If Greek then Lang=0 Else Lang=1
+﻿ΤΜΗΜΑ ΓΕΝΙΚΟ A {If Greek then Lang=0 Else Lang=1
 Dim Eng()
 Eng()=("Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Oxygen", "Nitrogen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin", "Antimony", "Tellurium", "Iodine", "Xenon", "Caesium", "Barium", "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury", "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Lawrencium", "Rutherfordium", "Dubhnium", "Cymborgium", "Bohrium", "Hassium", "Maitnerium", "Darmstadium", "Rotgenium", "Copernicium", "Nichonium", "Flerovium", "Muscovium", "Livermorium", "Tensium", "Oganessium", "Lanthanum", "Deuterium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Actinium", "Thorium", "Proactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium")
 DATA 0,0,232,105,1,"H","Υδρογόνο",1.00794,"1312.0","2.20","1s¹","+1-1"
@@ -347,40 +347,39 @@ back {
 			wait 10
 			until mouse=0
 		end if
-		if monitors>1 then {
-			if ((i=15 or i=16) and j=0) then {
-				Lang=1-Lang
-				If Lang=1 then Locale 1033 Else Locale 1032
-				GRADIENT 0, 0
-				do
-				wait 10
-				until mouse=0
-				push window
-				
-				goto displayagain
-			} Else.if (i=16 or i=17) then {
-				if j=9 then {
-					if Lang=1 then
-					q=Ask("Change Monitor, to next Monitor;",PP$, "*Change", "Return")=1
-					else
-					q=Ask("Αλλαγή οθόνης προβολής, στην επόμενη οθόνη;",PP$, "*Αλλαγή", "Επιστροφή")=1
-					end if
-					if q then {
-						GRADIENT 0, 0
-						do
-						wait 10
-						until mouse=0
-						push window+1
-						goto displayagain
-					}
-				} else.if j=8 then {
-					If Lang=1 then
-						q= ask("This Application is written using M2000 Interpreter. It is open source and free to change it. Press Exit to Exit (use space bar to exit without using this dialogue)",PP$, "*Exit", "Return")=1
-					else
-						q= ask("Η εφαρμογή έχει γραφτεί με τη γλώσσα Μ2000, και είναι ανοικτού κώδικα, για ελεύθερη χρήση και για προσθήκες. Πάτα το Έξοδος γα έξοδο (χρησιμοποίησε το διάστημα για έξοδο χωρίς να ανοίξεις αυτόν τον διάλογο)",PP$, "*Έξοδος", "Επιστροφή")=1
-					end if
-					if q then goto end1
+		// we use blocks beacuse we have GOTO and this need a Block
+		if ((i=15 or i=16) and j=0) then {
+			Lang=1-Lang
+			If Lang=1 then Locale 1033 Else Locale 1032
+			GRADIENT 0, 0
+			do
+			wait 10
+			until mouse=0
+			push window
+			
+			goto displayagain
+		} Else.if (i=16 or i=17) and monitors>1 then {
+			if j=9 then {
+				if Lang=1 then
+				q=Ask("Change Monitor, to next Monitor;",PP$, "*Change", "Return")=1
+				else
+				q=Ask("Αλλαγή οθόνης προβολής, στην επόμενη οθόνη;",PP$, "*Αλλαγή", "Επιστροφή")=1
+				end if
+				if q then {
+					GRADIENT 0, 0
+					do
+					wait 10
+					until mouse=0
+					push window+1
+					goto displayagain
 				}
+			} else.if j=8 then {
+				If Lang=1 then
+					q= ask("This Application is written using M2000 Interpreter. It is open source and free to change it. Press Exit to Exit (use space bar to exit without using this dialogue)",PP$, "*Exit", "Return")=1
+				else
+					q= ask("Η εφαρμογή έχει γραφτεί με τη γλώσσα Μ2000, και είναι ανοικτού κώδικα, για ελεύθερη χρήση και για προσθήκες. Πάτα το Έξοδος γα έξοδο (χρησιμοποίησε το διάστημα για έξοδο χωρίς να ανοίξεις αυτόν τον διάλογο)",PP$, "*Έξοδος", "Επιστροφή")=1
+				end if
+				if q then goto end1
 			}
 		}
 	}
