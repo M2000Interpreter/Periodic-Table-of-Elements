@@ -1,5 +1,5 @@
 Periodic Table of Elements.ed
-Version 3 (Greek Edition)
+Version 4 (Greek Edition)
 
 Wrong use of an if prevents the work of "buttons" in a system with one monitor;
 

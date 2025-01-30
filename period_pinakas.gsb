@@ -358,8 +358,8 @@ back {
 			push window
 			
 			goto displayagain
-		} Else.if (i=16 or i=17) and monitors>1 then {
-			if j=9 then {
+		} Else.if (i=16 or i=17) then {
+			if j=9 and monitors>1  then {
 				if Lang=1 then
 				q=Ask("Change Monitor, to next Monitor;",PP$, "*Change", "Return")=1
 				else
@@ -394,7 +394,7 @@ end1:
 		Print
 	end sub
 	sub prlineOnly(a$, b, units$="")
-		Print Part  @(8), $(7, 13),~(#A0CCAA),a$, $(5), ~(15),b+" "+units$
+		Print Part  @(8), $(7, 13),~(#A0CCAA),a$, $(5, 20), ~(15),b+" "+units$
 	end sub	
 }
 }
