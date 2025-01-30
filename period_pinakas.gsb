@@ -1,0 +1,401 @@
+﻿MODULE GLOBAL A {If Greek then Lang=0 Else Lang=1
+Dim Eng()
+Eng()=("Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Oxygen", "Nitrogen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin", "Antimony", "Tellurium", "Iodine", "Xenon", "Caesium", "Barium", "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury", "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Lawrencium", "Rutherfordium", "Dubhnium", "Cymborgium", "Bohrium", "Hassium", "Maitnerium", "Darmstadium", "Rotgenium", "Copernicium", "Nichonium", "Flerovium", "Muscovium", "Livermorium", "Tensium", "Oganessium", "Lanthanum", "Deuterium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Actinium", "Thorium", "Proactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium")
+DATA 0,0,232,105,1,"H","Υδρογόνο",1.00794,"1312.0","2.20","1s¹","+1-1"
+DATA 0,17,232,4,2,"He","Ηλιο",4.002602,"2372.3","---","1s²","---"
+DATA 1,0,232,166,3,"Li","Λίθιο",6.941,"520.2","0.98","1s²2s¹","+1-1"
+DATA 1,1,232,172,4,"Be","Βηρύλλιο",9.012182,"899.5","1.57","1s²2s²","+2"
+DATA 1,12,232,70,5,"B","Βόριο",10.811,"800.6","2.04","1s²2s²2p¹","+3+2+1"
+DATA 1,13,232,105,6,"C","Ανθρακας",12.0107,"1086.5","2.55","1s²2s²2p²","+4+3+2+1-1-2-3-4"
+DATA 1,14,232,105,7,"N","Οξυγόνο",14.0067,"1402.3","3.04","1s²2s²2p³","+5+4+3+2+1-1-2-3"
+DATA 1,15,232,105,8,"O","Άζωτο",15.9994,"1313.9","3.44","1s²2s²2p⁴","+2+1-1-2"
+DATA 1,16,232,5,9,"F","Φθόριο",18.998403,"1681.0","3.98","1s²2s²2p⁵","-1"
+DATA 1,17,232,4,10,"Ne","Νέον",20.1797,"2080.7","---","1s²2s²2p⁶","---"
+DATA 2,0,232,166,11,"Na","Νάτριο",22.98976,"495.8","0.93","[Ne]3s¹","+1-1"
+DATA 2,1,232,172,12,"Mg","Μαγνήσιο",24.305,"737.7","1.31","[Ne]3s²","+2+1"
+DATA 2,12,232,178,13,"Al","Αλουμίνιο",26.98153,"577.5","1.61","[Ne]3s²3p¹","+3+1"
+DATA 2,13,232,70,14,"Si","Πυρίτιο",28.0855,"786.5","1.90","[Ne]3s²3p²","+4+3+2+1-1-2-3-4"
+DATA 2,14,232,105,15,"P","Φώσφορος",30.97696,"1011.8","2.19","[Ne]3s²3p³","+5+4+3+2+1-1-2"
+DATA 2,15,232,105,16,"S","Θείο",32.065,"999.6","2.58","[Ne]3s²3p⁴","+6+5+4+3+2+1-1-2"
+DATA 2,16,232,5,17,"Cl","Χλώριο",35.453,"1251.2","3.16","[Ne]3s²3p⁵","+7+6+5+4+3+2+1-1"
+DATA 2,17,232,4,18,"Ar","Αργόν",39.948,"1520.6","---","[Ne]3s²3p⁶","---"
+DATA 3,0,232,166,19,"K","Κάλιο",39.0983,"418.8","0.82","[Ar]4s¹","+1"
+DATA 3,1,232,172,20,"Ca","Ασβέστιο",40.078,"589.8","1.00","[Ar]4s²","+2"
+DATA 3,2,232,112,21,"Sc","Σκάνδιο",44.95591,"633.1","1.36","[Ar]3d¹4s²","+3+2+1"
+DATA 3,3,232,112,22,"Ti","Τιτάνιο",47.867,"658.8","1.54","[Ar]3d²4s²","+4+3+2+1-1"
+DATA 3,4,232,112,23,"V","Βανάδιο",50.9415,"650.9","1.63","[Ar]3d³4s²","+5+4+3+2+1-1"
+DATA 3,5,232,112,24,"Cr","Χρώμιο",51.9962,"652.9","1.66","[Ar]3d⁵4s¹","+6+5+4+3+2+1-1-2"
+DATA 3,6,232,112,25,"Mn","Μαγγάνιο",54.93804,"717.3","1.55","[Ar]3d⁵4s²","+7+6+5+4+3+2+1...-3"
+DATA 3,7,232,112,26,"Fe","Σίδηρος",55.845,"762.5","1.83","[Ar]3d⁶4s²","+6+5+4+3+2+1-1-2"
+DATA 3,8,232,112,27,"Co","Κοβάλτιο",58.93319,"760.4","1.91","[Ar]3d⁷4s²","+5+4+3+2+1-1-2"
+DATA 3,9,232,112,28,"Ni","Νικέλιο",58.6934,"737.1","1.88","[Ar]3d⁸4s²","+4+3+2+1-1"
+DATA 3,10,232,112,29,"Cu","Χαλκός",63.546,"745.5","1.90","[Ar]3d¹⁰4s¹","+4+3+2+1"
+DATA 3,11,232,112,30,"Zn","Ψευδάργυρος",65.38,"906.4","1.65","[Ar]3d¹⁰4s²","+2"
+DATA 3,12,232,178,31,"Ga","Γάλλιο",69.723,"578.8","1.81","[Ar]3d¹⁰4s²4p¹","+3+2+1"
+DATA 3,13,232,70,32,"Ge","Γερμάνιο",72.64,"762.0","2.01","[Ar]3d¹⁰4s²4p²","+4+3+2+1-4"
+DATA 3,14,232,70,33,"As","Αρσενικό",74.9216,"947.0","2.18","[Ar]3d¹⁰4s²4p³","+5+3+2-3"
+DATA 3,15,232,105,34,"Se","Σελήνιο",78.96,"941.0","2.55","[Ar]3d¹⁰4s²4p⁴","+6+4+2-2"
+DATA 3,16,232,5,35,"Br","Βρομίνιο",79.904,"1139.9","2.96","[Ar]3d¹⁰4s²4p⁵","+7+5+4+3+1-1"
+DATA 3,17,232,4,36,"Kr","Κρυπτόν",83.798,"1350.8","3.00","[Ar]3d¹⁰4s²4p⁶","+2"
+DATA 4,0,232,166,37,"Rb","Ρουβίδιο",85.4678,"403.0","0.82","[Kr]5s¹","+1"
+DATA 4,1,232,172,38,"Sr","Στρόντιο",87.62,"549.5","0.95","[Kr]5s²","+2"
+DATA 4,2,232,112,39,"Y","Ύττριο",88.90585,"600.0","1.22","[Kr]4d¹5s²","+3+2+1"
+DATA 4,3,232,112,40,"Zr","Ζιρκόνιο",91.224,"640.1","1.33","[Kr]4d²5s²","+4+3+2+1"
+DATA 4,4,232,112,41,"Nb","Νιόβιο",92.90638,"652.1","1.60","[Kr]4d⁴5s¹","+5+4+3+2-1"
+DATA 4,5,232,112,42,"Mo","Μολυβδαίνιο",95.96,"684.3","2.16","[Kr]4d⁵5s¹","+6+5+4+3+2+1-1-2"
+DATA 4,6,232,112,43,"Tc","Τεχνήτιο",98,"702.0","1.90","[Kr]4d⁵5s²","+7+6+5+4+3+2+1-1-3"
+DATA 4,7,232,112,44,"Ru","Ρουθήνιο",101.07,"710.2","2.20","[Kr]4d⁷5s¹","+8+7+6+5+4+3+2+1-2"
+DATA 4,8,232,112,45,"Rh","Ρόδιο",102.9055,"719.7","2.28","[Kr]4d⁸5s¹","+6+5+4+3+2+1-1"
+DATA 4,9,232,112,46,"Pd","Παλλάδιο",106.42,"804.4","2.20","[Kr]4d¹⁰","+4+2"
+DATA 4,10,232,112,47,"Ag","Ασήμι",107.8682,"731.0","1.93","[Kr]4d¹⁰5s¹","+3+2+1"
+DATA 4,11,232,112,48,"Cd","Κάδμιο",112.441,"867.8","1.69","[Kr]4d¹⁰5s²","+2"
+DATA 4,12,232,178,49,"In","Ινδιο",114.818,"558.3","1.78","[Kr]4d¹⁰5s²5p¹","+3+2+1"
+DATA 4,13,232,178,50,"Sn","Κασσίτερος",118.71,"708.6","1.96","[Kr]4d¹⁰5s²5p²","+4+2-4"
+DATA 4,14,232,70,51,"Sb","Αντιμόνιο",121.76,"834.0","2.05","[Kr]4d¹⁰5s²5p³","+5+3-3"
+DATA 4,15,232,70,52,"Te","Τελλούριο",127.6,"869.3","2.10","[Kr]4d¹⁰5s²5p⁴","+6+5+4+2-2"
+DATA 4,16,232,5,53,"I","Ιώδιο",126.9044,"1008.4","2.66","[Kr]4d¹⁰5s²5p⁵","+7+5+3+1-1"
+DATA 4,17,232,4,54,"Xe","Ξένο",131.293,"1170.4","2.60","[Kr]4d¹⁰5s²5p⁶","+8+6+4+2"
+DATA 5,0,232,166,55,"Cs","Καίσιο",132.9054,"375.7","0.79","[Xe]6s¹","+1"
+DATA 5,1,232,172,56,"Ba","Βάριο",137.327,"502.9","0.89","[Xe]6s²","+2"
+DATA 5,2,232,112,71,"Lu","Λουτέτιο",174.9668,"523.5","1.27","[Xe]4f¹⁴5d¹6s²","+3"
+DATA 5,3,232,112,72,"Hf","Αφνιο",178.49,"658.5","1.30","[Xe]4f¹⁴5d²6s²","+4+3+2"
+DATA 5,4,232,112,73,"Ta","Ταντάλιο",180.9478,"761.0","1.50","[Xe]4f¹⁴5d³6s²","+5+4+3+2-1"
+DATA 5,5,232,112,74,"W","Βολφράμιο",183.84,"770.0","2.36","[Xe]4f¹⁴5d⁴6s²","+6+5+4+3+2+1-1-2"
+DATA 5,6,232,112,75,"Re","Ρήνιο",186.207,"760.0","1.90","[Xe]4f¹⁴5d⁵6s²","+7+6+5+4+3+2+1-1-3"
+DATA 5,7,232,112,76,"Os","Όσμιο",190.23,"840.0","2.20","[Xe]4f¹⁴5d⁶6s²","+8+7+6+5+4+3+2+1-2"
+DATA 5,8,232,112,77,"Ir","Ιρίδιο",192.217,"880.0","2.20","[Xe]4f¹⁴5d⁷6s²","+6+5+4+3+2+1-1-3"
+DATA 5,9,232,112,78,"Pt","Πλατίνα",195.084,"870.0","2.28","[Xe]4f¹⁴5d⁹6s¹","+6+5+4+2"
+DATA 5,10,232,112,79,"Au","Χρυσός",196.9665,"890.0","2.54","[Xe]4f¹⁴5d¹⁰6s¹","+5+3+2+1-1"
+DATA 5,11,232,112,80,"Hg","Υδράργυρος",200.59,"1007.1","2.00","[Xe]4f¹⁴5d¹⁰6s²","+4+2+1"
+DATA 5,12,232,178,81,"Tl","Θάλλιο",204.3833,"589.4","1.62","[Xe]4f¹⁴5d¹⁰6s²6p¹","+3+1"
+DATA 5,13,232,178,82,"Pb","Μόλυβδος",207.2,"715.6","2.33","[Xe]4f¹⁴5d¹⁰6s²6p²","+4+2-4"
+DATA 5,14,232,178,83,"Bi","Βισμούθιο",208.9804,"703.0","2.02","[Xe]4f¹⁴5d¹⁰6s²6p³","+5+3-3"
+DATA 5,15,232,70,84,"Po","Πολώνιο",209,"812.1","2.00","[Xe]4f¹⁴5d¹⁰6s²6p⁴","+6+4+2-2"
+DATA 5,16,232,5,85,"At","Άστατο",210,"890.0","2.20","[Xe]4f¹⁴5d¹⁰6s²6p⁵","+1-1"
+DATA 5,17,232,4,86,"Rn","Ραδόνιο",222,"1037.0","---","[Xe]4f¹⁴5d¹⁰6s²6p⁶","---"
+DATA 6,0,232,166,87,"Fr","Φράγκιο",223,"380.0","0.70","[Rn]7s¹","+1"
+DATA 6,1,232,172,88,"Ra","Ράδιο",226,"509.3","0.90","[Rn]7s²","+2"
+DATA 6,2,232,112,103,"Lr","Λωρένσιο",262,"470","---","[Rn]5f¹⁴7s²7p¹","+3"
+DATA 6,3,232,112,104,"Rf","Ραδερφόρντιο",261,"580.0","---","[Rn]5f¹⁴7s²6d²","+4"
+DATA 6,4,232,112,105,"Db","Ντούμπνιο",262,"---","---","[Rn]5f¹⁴7s²6d³","+5"
+DATA 6,5,232,112,106,"Sg","Σιμπόργκιο",266,"---","---","[Rn]5f¹⁴7s²6d⁴","+6"
+DATA 6,6,232,112,107,"Bh","Μπόριο",264,"---","---","[Rn]5f¹⁴7s²6d⁵","+7"
+DATA 6,7,232,112,108,"Hs","Χάσιο",277,"---","---","[Rn]5f¹⁴7s²6d¹⁰","+8"
+DATA 6,8,232,112,109,"Mt","Μαϊτνέριο",268,"---","---","[Rn]5f¹⁴7s²6d⁷","+3+1+3+5"
+DATA 6,9,232,112,110,"Ds","Νταρμστάντιο",271,"---","---","[Rn]5f¹⁴7s²6d⁸","+6"
+DATA 6,10,232,112,111,"Rg","Ρεντγκένιο",272,"---","---","[Rn]5f¹⁴7s¹6d¹⁰","-1+1+3+5"
+DATA 6,11,232,112,112,"Cn","Κοπερνίκιο",285,"---","---","[Rn]5f¹⁴7s²6d¹⁰","+4+2"
+DATA 6,12,232,178,113,"Nh","Νιχόνιο",284,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p¹","+1+3+5"
+DATA 6,13,232,178,114,"Fl","Φλερόβιο",289,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p²","+2+4"
+DATA 6,14,232,178,115,"Mc","Μοσκόβιο",288,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p³","+1+3"
+DATA 6,15,232,178,116,"Lv","Λιβερμόριο",292,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p⁴","+2+4"
+DATA 6,16,232,5,117,"Ts","Τενέσιο",294,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p⁵","-1+1+3+5"
+DATA 6,17,232,4,118,"Og","Ογκανέσσιο",294,"---","---","[Rn]5f¹⁴7s²6d¹⁰7p⁶","+2+4"
+DATA 8,2,232,46,57,"La","Λανθάνιο",138.9054,"538.1","1.10","[Xe]5d¹6s²","+3+2"
+DATA 8,3,232,46,58,"Ce","Δημήτριο",140.116,"534.4","1.12","[Xe]4f¹5d¹6s²","+4+3+2"
+DATA 8,4,232,46,59,"Pr","Πρασεοδύμιο",140.9076,"527.0","1.13","[Xe]4f³6s²","+4+3+2"
+DATA 8,5,232,46,60,"Nd","Νεοδύμιο",144.242,"533.1","1.14","[Xe]4f⁴6s²","+3+2"
+DATA 8,6,232,46,61,"Pm","Προμήθιο",145,"540.0","---","[Xe]4f⁵6s²","+3"
+DATA 8,7,232,46,62,"Sm","Σαμάριο",150.36,"544.5","1.17","[Xe]4f⁶6s²","+3+2"
+DATA 8,8,232,46,63,"Eu","Ευρώπιο",151.964,"547.1","---","[Xe]4f⁷6s²","+3+2"
+DATA 8,9,232,46,64,"Gd","Γαδολίνιο",157.25,"593.4","1.20","[Xe]4f⁷5d¹6s²","+3+2+1"
+DATA 8,10,232,46,65,"Tb","Τέρβιο",158.9253,"565.8","---","[Xe]4f⁹6s²","+4+3+1"
+DATA 8,11,232,46,66,"Dy","Δυσπρόσιο",162.50,"573.0","1.22","[Xe]4f¹⁰6s²","+3+2"
+DATA 8,12,232,46,67,"Ho","Χόλμιο",164.9303,"581.0","1.23","[Xe]4f¹¹6s²","+3"
+DATA 8,13,232,46,68,"Er","Ερβιο",167.259,"589.3","1.24","[Xe]4f¹²6s²","+3"
+DATA 8,14,232,46,69,"Tm","Θούλιο",168.9342,"596.7","1.25","[Xe]4f¹³6s²","+3+2"
+DATA 8,15,232,46,70,"Yb","Υτέρβιο",173.054,"603.4","---","[Xe]4f¹⁴6s²","+3+2"
+DATA 9,2,232,40,89,"Ac","Ακτίνιο",227,"499.0","1.10","[Rn]6d¹7s²","+3"
+DATA 9,3,232,40,90,"Th","Θόριο",232.038,"587.0","1.30","[Rn]6d²7s²","+4+3+2"
+DATA 9,4,232,40,91,"Pa","Πρωτακτίνιο",231.0359,"568.0","1.50","[Rn]5f²6d¹7s²","+5+4+3"
+DATA 9,5,232,40,92,"U","Ουράνιο",238.0285,"597.6","1.38","[Rn]5f³6d¹7s²","+6+5+4+3"
+DATA 9,6,232,40,93,"Np","Ποσειδώνιο",237,"604.5","1.36","[Rn]5f⁴6d¹7s²","+7+6+5+4+3"
+DATA 9,7,232,40,94,"Pu","Πλουτώνιο",244,"584.7","1.28","[Rn]5f⁶7s²","+7+6+5+4+3"
+DATA 9,8,232,40,95,"Am","Αμερίκιο",243,"578.0","1.30","[Rn]5f⁷7s²","+6+5+4+3+2"
+DATA 9,9,232,40,96,"Cm","Κούριο",247,"581.0","1.30","[Rn]5f⁷6d¹7s²","+4+3"
+DATA 9,10,232,40,97,"Bk","Βερκέλιο",247,"601.0","1.30","[Rn]5f⁹7s²","+4+3"
+DATA 9,11,232,40,98,"Cf","Καλιφόρνιο",251,"608.0","1.30","[Rn]5f¹⁰7s²","+4+3+1"
+DATA 9,12,232,40,99,"Es","Αϊνστάινιο",252,"619.0","1.30","[Rn]5f¹¹6s²","+3+2"
+DATA 9,13,232,40,100,"Fm","Φέρμιο",257,"627.0","1.30","[Rn]5f¹²7s²","+3+2"
+DATA 9,14,232,40,101,"Md","Μεντελέβιο",258,"635.0","1.30","[Rn]5f¹³7s²","+3+2"
+DATA 9,15,232,40,102,"No","Νόμπελιο",259,"642.0","1.30","[Rn]5f¹⁴7s²","+3+2"
+group element {
+	type:Element
+	x,y,a,b
+	no ' atomic number
+	code$, name$, name2$
+	double atomic_mass
+	Ionization_Energy$
+	Electronegativity$
+	Electron_configuration$
+	Oxidation_state$
+}
+elements=list
+aKey$=""""
+p=0
+while not empty
+	for element {
+		read .x, .y, .a, .b, .no, .code$, .name$, .atomic_mass, .Ionization_Energy$, .Electronegativity$
+		read .Electron_configuration$, .Oxidation_state$
+		aKey$="("+(.x)+","+(.y)+")"
+		.name2$=Eng(p)
+		p++
+	}
+	append elements, aKey$:=element
+end while
+//escape off{
+displayagain:
+if not empty then
+	window mode, number
+else
+	window mode, window
+end if
+layer {
+	show
+	hide
+}
+back {
+	cls,0
+	wait 100
+	? $("")
+	player 0
+	cls 0,0 :flush
+	Gradient 1, 5
+	cursor 0,1
+	move !
+	PP$=IF$(Lang=1->"Periodic Table of Elements", "Περιοδικός Πίνακας Στοιχείων")
+	zz=pos.y
+	MMM=SCALE.X DIV 5800
+	move scale.x/2, zz*MMM/2
+	color {Legend PP$, "ARIAL BLACK", mode*MMM,0,2};
+	move 0,0
+	fill scale.x, zz*MMM, 14, 5
+	move scale.x/2, zz*MMM/2
+	color {};
+	pen 0 {color {Legend PP$, "ARIAL BLACK", mode*MMM,0,2}}
+
+	F=scale.x div 580
+	n = twipsX*F
+	nn = (n+n-twipsX)
+	nn1 = nn-8*twipsX
+	tw= 18*nn
+	mm= nn-twipsX*4
+	th=nn*10
+	cx=(scale.x-tw) div 2
+	cy=(scale.y-th) div 2
+	colors = list:= 105:=#8787FF, 166:=#D75F00, 172:=#D78700, 112:=#87D700, 46:=#00FF00, 40:=#00D700, 70:=#5FAF00, 178:=#D7AF00, 5:=#D33682, 4:=#268BD2
+	refresh 3000
+	for i=17 to 0
+		for j=9 to 0
+			move cx+nn*i, cy+nn*j
+			if exist(elements, "("+j+","+i+")")  then
+				element=eval(elements)
+				for element {
+					fill nn,nn, colors(.b)
+					step -nn, -nn
+					'step twipsX*3, twipsY*3
+					'pen 0 {width 2 {draw nn1, 0: draw 0, nn1: draw -nn1, 0 :draw 0,-nn1}}
+					drawing  {
+						window 2, nn, nn
+						gradient colors(.b)
+						mode F/3.5
+						pen 0 {width 2 {draw nn, 0: draw 0, nn: draw -nn, 0 :draw 0,-nn}}
+						mode int(F/2)
+						bold 1
+						pen 0
+						move scale.x/2, scale.y/2-scale.x/height*.125/2
+						legend .code$, "Arial Black", mode*1.3,0, 2
+						step -twipsx, -twipsx
+						Pen 15
+						legend .code$, "Arial Black", mode*1.3,0, 2
+						linespace f*1.6
+						mode mode/3.25
+						cursor 0, 1
+						move !
+						zz=pos.y
+						pen #002255 {
+							bold 0
+							pen 15
+							move scale.x/2, scale.y-zz+twipsY*2
+							legend if$(Lang=1->.name2$,.name$), "Times New", Mode*1.5, 0, 2
+							bold 1
+							pen 1
+							move nn-twipsX, zz
+							t$=""+(round(.atomic_mass, 5))
+							legend t$, "Verdana", Mode*1.1,0,1
+							move  0,0
+							Pen #FAF7AF: Bold 0
+							legend ""+.no, "Arial Black",  mode*2.2, 0.125
+						}
+					} as disp
+					step nn/2, nn/2
+					image disp,,,0
+				}			
+			end if
+		next
+	next i
+	pen #A7A7A7{
+		for i=0 to 17
+			move cx+nn*i+nn/2, cy+nn*7+nn/4
+			Legend str$(i+1,""), fontname$, F/3.5,0,2
+		next
+		move cx+nn*0, cy+nn*8+nn/4
+		Legend if$(Lang=1->"Lanthanides","Λανθανίδες"), fontname$, F/3.5*1.4
+		move cx+nn*0, cy+nn*9+nn/4
+		Legend If$(Lang=1->"Actinides","Ακτινίδες"), fontname$, F/3.5*1.4
+		move cx+nn*16, cy+nn/2
+		if lang=1 then
+			Legend "Greek", fontname$, F/3.5*1.4,0,2		
+		else
+			Legend "Αγγλικά", fontname$, F/3.5*1.4,0,2
+		end if		
+		move cx+nn*17, cy+nn*8+nn/4
+		if lang=1 then
+			Legend {Exit
+			Application
+			}, fontname$, F/3.5*1.4,0,2		
+		else
+			Legend {Τερματισμός
+			Εφαρμογής
+			}, fontname$, F/3.5*1.4,0,2
+		end if
+		if monitors=1 then pen 5
+		move cx+nn*17, cy+nn*9+nn/4
+		if lang=1 then
+			Legend {Change
+			Monitor
+			}, fontname$, F/3.5*1.4,0,2									
+		else
+			Legend {Αλλαγή
+			Οθόνης
+			}, fontname$, F/3.5*1.4,0,2							
+		end if
+	}
+	refresh 25
+	wx=nn*10
+	wy=nn*2
+	ccx=motion.x-motion.xW
+	ccy=motion.y-motion.yW
+	layer 1 {' need that to prepare for the next command
+	}
+	player 1, cx+nn*2+ccx, cy+nn+ccy
+	Every 1000/60 {
+		if mouse then {
+			i=(mouse.x-cx) div nn
+			j=(mouse.y-cy) div nn
+			if exist(elements, "("+j+","+i+")")  then
+				element=eval(elements)
+				do
+					wait 10
+				until mouse=0
+				z=F/3.8*1.2
+				layer 1 {			
+					pen 15
+				again:
+					window 1, wx, wy
+					bold 1
+					mode z					
+					gradient colors(element.b), 0, 0				 
+					cursor 0,0
+					double
+					pen #aaccff {
+						report 1, If$(Lang=1->element.name2$,element.name$), scale.x*.98
+					}
+					normal
+					move mm*1.5, scale.y*2/5
+					pen #222222 {
+				 	legend element.code$, "Arial Black", mode*5, .12,  2
+				 	}
+					Pen #FAF7AF {
+						width 3 {
+							color {legend element.code$, "Arial Black", mode*5, .12, 2, 1}
+						}
+					}
+					e1=val(element.Ionization_Energy$)			
+					e2=val(element.Electronegativity$)
+					cursor 0,1
+					prline(If$(Lang=1->"Atomic Number","Ατομικός Αριθμός:"), element.no)
+					prline(If$(Lang=1->"Ionization Energy:","Ενέργεια Ιονισμού:"), ! if(e1=0->(element.Ionization_Energy$,""), (str$(e1, locale), "kJ/mol")))					
+					prline(If$(Lang=1->"Electronegativity:","Ηλεκτραρνητικότητα:"), ! if(e2=0->(element.Electronegativity$, ""), (str$(e2, locale), "eV")))
+					prline(if$(Lang=1->"Atomic Mass:", "Ατομική Μάζα:"), element.atomic_mass, " 1/12 "+if$(Lang=1->"Mass of","μάζας του")+" ¹²C")
+					prlineOnly(if$(Lang=1->"Oxidation states:","Αριθμοί Οξείδωσης"), element.Oxidation_state$)
+				zzzz=mode
+				drawing {				
+					Pen #FAF7AF {Legend element.Electron_configuration$,fontname$,zzzz,0,2}
+				} as elect
+				cursor 0,5
+				move !
+				step mm*1.5, image.y(elect)/2+Linespace*2
+				image elect,,,0
+				show
+				refresh 1000
+				Every 1000/60 {				
+					if mouse or inkey$=" " then exit
+				}
+				if mouse then {
+					i=(mousea.x-cx-ccx) div nn
+					j=(mousea.y-cy-ccy) div nn
+					if exist(elements, "("+j+","+i+")")  then {
+						element=eval(elements)
+						goto again:
+					}
+				}
+				refresh 25
+				hide
+			}
+			do
+			wait 10
+			until mouse=0
+		end if
+		if monitors>1 then {
+			if ((i=15 or i=16) and j=0) then {
+				Lang=1-Lang
+				If Lang=1 then Locale 1033 Else Locale 1032
+				GRADIENT 0, 0
+				do
+				wait 10
+				until mouse=0
+				push window
+				
+				goto displayagain
+			} Else.if (i=16 or i=17) then {
+				if j=9 then {
+					if Lang=1 then
+					q=Ask("Change Monitor, to next Monitor;",PP$, "*Change", "Return")=1
+					else
+					q=Ask("Αλλαγή οθόνης προβολής, στην επόμενη οθόνη;",PP$, "*Αλλαγή", "Επιστροφή")=1
+					end if
+					if q then {
+						GRADIENT 0, 0
+						do
+						wait 10
+						until mouse=0
+						push window+1
+						goto displayagain
+					}
+				} else.if j=8 then {
+					If Lang=1 then
+						q= ask("This Application is written using M2000 Interpreter. It is open source and free to change it. Press Exit to Exit (use space bar to exit without using this dialogue)",PP$, "*Exit", "Return")=1
+					else
+						q= ask("Η εφαρμογή έχει γραφτεί με τη γλώσσα Μ2000, και είναι ανοικτού κώδικα, για ελεύθερη χρήση και για προσθήκες. Πάτα το Έξοδος γα έξοδο (χρησιμοποίησε το διάστημα για έξοδο χωρίς να ανοίξεις αυτόν τον διάλογο)",PP$, "*Έξοδος", "Επιστροφή")=1
+					end if
+					if q then goto end1
+				}
+			}
+		}
+	}
+	if inkey$=" " then exit
+	} 
+	push key$
+end1:
+	cls ,0
+	flush
+	sub prline()
+		prlineOnly()
+		Print
+	end sub
+	sub prlineOnly(a$, b, units$="")
+		Print Part  @(8), $(7, 13),~(#A0CCAA),a$, $(5), ~(15),b+" "+units$
+	end sub	
+}
+}
