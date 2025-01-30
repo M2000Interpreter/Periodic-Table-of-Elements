@@ -1,8 +1,7 @@
 Periodic Table of Elements.ed
-Version 4 (Greek Edition)
+Version 5 (Greek Edition)
 
-Wrong use of an if prevents the work of "buttons" in a system with one monitor;
-
+Nitrogen/Oxygen swap labels.
 
 Using the Application:
 1. Click on an Element to see more information
